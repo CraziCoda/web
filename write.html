@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Write WikiHUB</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f8f9fa;
+			}
+			#content {
+				max-width: 800px;
+				margin: 20px auto;
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 5px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+			h1,
+			h2,
+			h3 {
+				color: #333;
+			}
+			p {
+				line-height: 1.6;
+				color: #555;
+			}
+			a {
+				color: #0366d6;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			ul,
+			ol {
+				padding-left: 20px;
+			}
+			textarea,
+			input[type="text"] {
+				width: calc(100% - 40px);
+				margin: 10px 0;
+				padding: 10px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+			}
+			button {
+				padding: 10px 20px;
+				background-color: #0366d6;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			button:hover {
+				background-color: #0056b3;
+			}
+		</style>
+		<link rel="stylesheet" href="./styles/index.css" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<div>
+				<div class="logo">
+					<span>Wiki</span><span style="font-weight: bold">HUB</span>
+				</div>
+				<div></div>
+			</div>
+
+			<div class="menu">
+				<a>Write</a>
+				<a>Articles</a>
+				<a>Help</a>
+				<a>About</a>
+			</div>
+		</header>
+		<div id="content">
+			<h1>Write Article</h1>
+			<form>
+				<input
+					type="text"
+					name="title"
+					placeholder="Title of the Article"
+					required
+				/>
+				<textarea
+					name="content"
+					placeholder="Write your content here..."
+					required
+				></textarea>
+				<input
+					type="text"
+					name="categories"
+					placeholder="Categories (comma separated)"
+				/>
+				<button type="submit">Add Article</button>
+			</form>
+		</div>
+	</body>
+</html>
